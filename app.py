@@ -370,7 +370,7 @@ def generate_nezha_config():
         return  # v0 模式不需要 config.yaml
 
     nzport = NEZHA_SERVER.split(':')[-1] if ':' in NEZHA_SERVER else ''
-    tls_ports = {'443', '8443', '2096', '2087', '2083', '2053'}
+    tls_ports = {'443', '8443', '2096', '2087', '2083','33544', '2053'}
     nezhatls = 'true' if nzport in tls_ports else 'false'
     config_yaml = f"""client_secret: {NEZHA_KEY}
 debug: false
@@ -602,7 +602,7 @@ def download_files_and_run():
 
     # 运行 Nezha
     if NEZHA_SERVER and NEZHA_PORT and NEZHA_KEY:
-        tls_ports = ['443', '8443', '2096', '2087', '2083', '2053']
+        tls_ports = ['443', '8443', '2096', '2087', '2083', '33544','2053']
         nezha_tls = '--tls' if NEZHA_PORT in tls_ports else ''
         command = f"nohup {npm_path} -s {NEZHA_SERVER}:{NEZHA_PORT} -p {NEZHA_KEY} {nezha_tls} --disable-auto-update --report-delay 4 --skip-conn --skip-procs >/dev/null 2>&1 &"
         try:
