@@ -42,6 +42,17 @@
 * 输出sub.txt节点文件，默认存放路径为.cache
 * 订阅：分配的域名/${SUB_PATH};例如https://www.google.com/${SUB_PATH}
 * 非标端口订阅(游戏类):分配的域名:端口/${SUB_PATH},前缀不是https，而是http，例如http://www.google.com:1234/${SUB_PATH}
+#环境变量配置
+可使用 .env 文件来配置环境变量运行
+
+或者直接在命令行中设置：
+
+export UPLOAD_URL="https://your-merge-sub-domain.com"
+export PROJECT_URL="https://your-project-domain.com"
+export PORT=3000
+export UUID="your-uuid-here"
+export NEZHA_SERVER="nz.your-domain.com:8008"
+export NEZHA_KEY="your-nezha-key"
 
 # 其他
 * 此版本为Argo版，直连版本请移步：https://github.com/eoovve/python-xray-direct
