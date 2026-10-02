@@ -43,7 +43,8 @@
 * 订阅：分配的域名/${SUB_PATH};例如https://www.google.com/${SUB_PATH}
 * 非标端口订阅(游戏类):分配的域名:端口/${SUB_PATH},前缀不是https，而是http，例如http://www.google.com:1234/${SUB_PATH}
   
-#环境变量配置
+# 环境变量配置
+
  可使用 .env 文件来配置环境变量运行
 
  或者直接在命令行中设置：
