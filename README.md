@@ -50,11 +50,17 @@
  或者直接在命令行中设置：
 
 export UPLOAD_URL="https://your-merge-sub-domain.com"
+
 export PROJECT_URL="https://your-project-domain.com"
+
 export PORT=3000
+
 export UUID="your-uuid-here"
+
 export NEZHA_SERVER="nz.your-domain.com:8008"
+
 export NEZHA_KEY="your-nezha-key"
+
 
 # 其他
 * 此版本为Argo版，直连版本请移步：https://github.com/eoovve/python-xray-direct
